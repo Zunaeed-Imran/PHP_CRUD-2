@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
   $state = $_POST['state'];
   $zip = $_POST['zip'];
 
-  $sql = "update `address2` set id = '$id', name = '$name', email = '$email', address1 = '$address1', address2 = '$address2', city = '$city', state = '$state', zip = '$zip' where is = $id";
+  $sql = "update `address2` set id = '$id', name = '$name', email = '$email', address1 = '$address1', address2 = '$address2', city = '$city', state = '$state', zip = '$zip' where id = $id";
 
   $result = mysqli_query($conn, $sql);
 
